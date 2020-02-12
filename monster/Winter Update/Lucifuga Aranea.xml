@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="Lucifuga Aranea" nameDescription="a Lucifuga Aranea" race="undead" experience="1000" speed="220">
+	<health now="12000" max="12000" />
+	<look type="263" corpse="7344" />
+	<targetchange interval="4000" chance="15" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="1" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag staticattack="80" />
+		<flag lightlevel="0" />
+		<flag lightcolor="0" />
+		<flag targetdistance="1" />
+		<flag runonhealth="0" />
+		<flag canwalkonenergy="0" />
+			<flag canwalkonfire="0" />
+			<flag canwalkonenergy="1" />
+			<flag canwalkonpoison="1" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="0" max="-5" />
+	</attacks>
+	<defenses armor="76" defense="0" />
+	<elements>
+		<element physicalPercent="100" />
+		<element holyPercent="100" />
+		<element deathPercent="100" />
+		<element firePercent="100" />
+		<element energyPercent="100" />
+		<element icePercent="100" />
+		<element earthPercent="100" />
+		<element drownPercent="100" />
+		<element lifedrainPercent="100" />
+		
+	</elements>
+	<immunities>
+		<immunity invisible="1" />
+		<immunity paralyze="1" />
+	</immunities>
+	<loot>
+	<item name="Poison Gland" chance="100000000000" />
+</loot>
+</monster>

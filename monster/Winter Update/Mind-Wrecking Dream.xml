@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="Mind-Wrecking Dream" nameDescription="a mind-wrecking dream" race="undead" experience="5500" speed="260">
+	<health now="3900" max="3900" />
+	<look type="300" corpse="8955" />
+	<targetchange interval="5000" chance="20" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="0" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="1" />
+		<flag staticattack="80" />
+		<flag runonhealth="0" />
+			<flag canwalkonfire="1" />
+			<flag canwalkonenergy="1" />
+			<flag canwalkonpoison="1" />
+	</flags>
+	<attacks>
+	</attacks>
+	<elements>
+		<element physicalPercent="100" />
+		<element holyPercent="100" />
+		<element deathPercent="100" />
+		<element firePercent="100" />
+		<element energyPercent="100" />
+		<element icePercent="100" />
+		<element earthPercent="100" />
+		<element drownPercent="100" />
+		<element lifedrainPercent="100" />
+		
+	</elements>
+	<immunities>
+		<immunity invisible="1" />
+		<immunity paralyze="1" />
+	</immunities>
+	<loot>
+</loot>
+</monster>

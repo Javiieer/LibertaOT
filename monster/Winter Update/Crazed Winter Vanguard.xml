@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Crazed Winter Vanguard" nameDescription="a Crazed Winter Vanguard" race="blood" experience="6500" speed="195" manacost="0">
+	<health now="7200" max="7200" />
+	<look type="1137" head="0" body="48" legs="8" feet="1" addons="1" corpse="34776" />
+	<targetchange interval="4000" chance="10" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="0" />
+		<flag convinceable="0" />
+		<flag isblockable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="1" />
+		<flag staticattack="90" />
+		<flag runonhealth="0" />
+		<flag canwalkonfire="0" />
+		<flag canwalkonenergy="0" />
+		<flag canwalkonpoison="0" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="0" max="150" />
+		<attack name="ice" interval="2000" chance="30" length="5" spread="0"  min="-100" max="-300">
+			<attribute key="shootEffect" value="ice" />
+			<attribute key="areaEffect" value="iceattack" />
+		</attack>
+		<attack name="ice" interval="2000" chance="30" radius="4" min="-200" max="-300">
+			<attribute key="shootEffect" value="ice" />
+			<attribute key="areaEffect" value="icearea" />
+		</attack>
+		<attack name="ice" interval="2000" chance="30" target="1" min="-200" max="-300">
+			<attribute key="areaEffect" value="iceattack" />
+		</attack>
+		<attack name="ice" interval="2000" chance="30" length="3" spread="0" min="-200" max="-300">
+			<attribute key="areaEffect" value="giantice" />
+		</attack>
+	</attacks>
+	<defenses armor="77" defense="0" />
+	<elements>
+		<element physicalPercent="0" />
+		<element holyPercent="0" />
+		<element deathPercent="15" />
+		<element firePercent="-30" />
+		<element energyPercent="-20" />
+		<element icePercent="50" />
+		<element earthPercent="-15" />
+		<element drownPercent="0" />
+		<element lifedrainPercent="0" />
+	</elements>
+	<immunities>
+		<immunity invisible="1" />
+		<immunity paralyze="1" />
+	</immunities>
+	<loot>
+<!--common-->
+<item name="platinum coin" countmax="13" chance="100000"/>
+<item name="red crystal fragment" chance="1000000"/>
+<item name="red gem" chance="1000000"/>
+<!--uncommon-->
+<item id="34696" countmax="2" chance="15000"/>  <!-- ice flower -->
+<item name="small enchanted ruby" chance="11550"/>
+<item name="miraculum" chance="13550"/>
+<item name="ultimate health potion" countmax="2" chance="14750"/>
+<item name="dream essence egg" chance="17550"/>
+<item name="tiger eye" chance="12350"/>
+<item name="northwind rod" chance="14600"/>
+<item name="glacier amulet" chance="13850"/>
+<item name="ice rapier" chance="11250"/>
+<!--semi-rare-->
+<item name="glacier robe" chance="1000"/>
+<item name="elven amulet" chance="500"/>
+	</loot>
+</monster>
